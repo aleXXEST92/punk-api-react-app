@@ -18,12 +18,19 @@ componentDidMount() {
 this.getBeer()
 }
 
-
-
 render () {
   return (
     <div className="App">
-    <Beer beers = {this.state.beer} />    
+      {this.state.beer.map((brew, index) => (
+        <Beer 
+        key={brew.id}
+        name={brew.name}
+        tagline={brew.tagline}
+        abv={brew.abv}
+        description={brew.description}
+        />
+      ))  
+    }  
     </div>
     );
   }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-LikeMeButton = (props) => {
-    return (
-        <h1></h1>
-    )
+const LikeMeButton = (props) => {
+return (
+    <button onClick={() =>props.button()}>Like Me</button>
+)
 }
 
 export default LikeMeButton

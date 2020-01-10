@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Beer from './components/Beer'
 
 
 class App extends Component {
@@ -22,7 +23,7 @@ this.getBeer()
 render () {
   return (
     <div className="App">
-      
+    <Beer beers = {this.state.beer} />    
     </div>
     );
   }

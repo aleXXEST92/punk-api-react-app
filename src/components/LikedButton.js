@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LikedButton = (props) => {
+const LikedButton = (props) =>{
     return (
     <button onClick={() =>props.button()}>Liked</button>
     )

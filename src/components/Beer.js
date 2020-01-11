@@ -26,13 +26,14 @@ export default class Beer extends Component {
     let isFav = this.state.isFav
 
     return (
+        
       <div>
-        <h1 className="name">{this.props.name}</h1>
+        <h2 className="name">{this.props.name}</h2>
         {/* <LikeMeButton button={this.toggleLike} />
         <LikedButton button={this.toggleLike} /> */}
         {isFav ? (<LikedButton button={this.toggleLike} />) : (<LikeMeButton button={this.toggleLike} />)}
-        <h2>{this.props.tagline}</h2>
-        <h3>ABV: {this.props.abv}</h3>
+        <h3>{this.props.tagline}</h3>
+        <h4>ABV: {this.props.abv}</h4>
         <p>{this.props.description}</p>
       </div>
     );
